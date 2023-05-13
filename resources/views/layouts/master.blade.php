@@ -20,8 +20,8 @@
 
  <div class="hero_area">
     <div class="bg-box">
-      <img src="{{asset('assets/lesImages/hero-bg/hero-bg3.jpg')}}" alt="">
-    </div>
+        <img src="{{asset('assets/lesImages/hero-bg/hero-bg3.jpg')}}" alt="">
+      </div>
 
     <!-- header section strats -->
     @include('layouts.main-headerbar')

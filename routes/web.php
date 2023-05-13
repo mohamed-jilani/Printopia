@@ -20,3 +20,11 @@ Route::get('/', function () {
 Route::get('/', function () {
     return view('Home');
 });
+
+Auth::routes(['verify'=>true]);
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/admin/home', [App\Http\Controllers\HomeController::class, 'index'])->name('homepage')->middleware('Role');
+Route::get('/master', function () {
+    return view('layouts/master');
+})->name('homepage')->middleware('role');
